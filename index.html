@@ -117,6 +117,56 @@ footer{text-align:center;padding:14px;color:var(--muted);font-weight:700}
   .offer-box h3{font-size:22px}
   .offer-box p{font-size:16px}
 }
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 22px;
+  left: 22px;
+  background-color: #25D366;
+  color: #fff;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.20);
+  z-index: 999;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.whatsapp-float:hover {
+  transform: scale(1.15);
+  background-color: #1ebe5d;
+}
+
+
+/* Floating Call Button */
+.call-float {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background-color: #0A84FF;
+  color: #fff;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.20);
+  z-index: 999;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.call-float:hover {
+  transform: scale(1.15);
+  background-color: #0066cc;
+}
+
 </style>
 </head>
 
@@ -128,7 +178,7 @@ footer{text-align:center;padding:14px;color:var(--muted);font-weight:700}
     <a href="#home">الرئيسية</a>
     <a href="#offers">العروض</a>
     <a href="#menu">القائمة</a>
-    <a href="#breakfast">الفطار</a>
+    
     <a href="#contact">تواصل</a>
   </nav>
 </header>
@@ -139,57 +189,91 @@ footer{text-align:center;padding:14px;color:var(--muted);font-weight:700}
   <h1>حيث تلتقي القهوة بالتميز</h1>
 </section>
 
+
 <section id="offers" class="fade">
   <h2 class="section-title">🔥 أفضل عروض كافيه تميم</h2>
   <div class="offers-grid">
     <div class="offer-box">
       <h3>عرض الصباح</h3>
-      <p>قهوة أمريكانو + كرواسون</p>
-      <span class="tag">خصم 30%</span>
+      <h1>قهوة أمريكانو + كرواسون</h1>
+	  <h1> 50 جنية فقط </h1>
+      <!-- <span class="tag">خصم 30%</span> -->
     </div>
-
-    <div class="offer-box variant-gold">
+    <!--
+	<div class="offer-box variant-gold">
       <h3>بطاقة تميم الذهبية</h3>
       <p>خصم 20% + مشروب يومي</p>
       <span class="tag">VIP</span>
     </div>
-
     <div class="offer-box">
       <h3>ميلك شيك</h3>
       <p>اشترِ واحدًا واحصل على الثاني مجانًا</p>
       <span class="tag">1+1</span>
     </div>
-
     <div class="offer-box">
       <h3>عرض الليل</h3>
       <p>خصم 25% على آخر طلب</p>
       <span class="tag">اليوم فقط</span>
     </div>
-  </div>
+  </div> 
+           -->
 </section>
 
 <section id="menu" class="menu-section fade">
-  <h2 class="section-title">قائمة المشروبات</h2>
+  <h2 class="section-title">☕ قائمة المشروبات</h2>
   <div class="new-accordion">
     <div class="acc-item">
       <button class="acc-btn">☕ المشروبات الساخنة</button>
       <div class="acc-content">
         <ul class="menu-list">
-          <li>شاي / أعشاب <span>15 ج.م</span></li>
-          <li>قهوة تركي <span>20 ج.م</span></li>
-          <li>قهوة فرنساوي <span>25 ج.م</span></li>
-          <li>قهوة بندق <span>28 ج.م</span></li>
+          <li>شاي<span>20</span></li>
+		  <li>اعشاب<span>20</span></li>
+		  <li>شاي بحليب<span>20</span></li>
+          <li>قهوة تميم تركي <span>M&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;30</span></li>
+		  <li>قهوة تميم محوج <span>M&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;30</span></li>
+          <li>قهوة فرنساوي <span>M&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;30</span></li>
+          <li>قهـــوة بندق <span>M&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;30</span></li>
         </ul>
       </div>
     </div>
 
     <div class="acc-item">
-      <button class="acc-btn">⚡ إسبريسو</button>
+      <button class="acc-btn">☕ إسبريسو</button>
       <div class="acc-content">
         <ul class="menu-list">
-          <li>إسبريسو لافازا <span>25 ج.م</span></li>
-          <li>إسبريسو إيللي <span>30 ج.م</span></li>
-          <li>إسبريسو تميم <span>28 ج.م</span></li>
+          <li>إسبريسو لافازا <span>M&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;30</span></li>
+          <li>إسبريسو إيللي <span>M&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;30</span></li>
+          <li>إسبريسو تميم <span>M&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;30</span></li>
+        </ul>
+      </div>
+    </div>
+	
+	<div class="acc-item">
+      <button class="acc-btn">❄️ هوت كوفي </button>
+      <div class="acc-content">
+        <ul class="menu-list">
+          <li>آيس لاتيه <span>35 ج.م</span></li>
+          <li>آيس كوفي <span>30 ج.م</span></li>
+          <li>وايت موكا <span>42 ج.م</span></li>
+          <li>آيس موكا <span>40 ج.م</span></li>
+		  <li> ايس امريكانو <span>40 ج.م</span></li>
+		  <li> ايس توفي نت <span>40 ج.م</span></li>
+		  <li> ايس دابل شيكن دولشي <span>40 ج.م</span></li>
+        </ul>
+      </div>
+    </div>
+	
+	<div class="acc-item">
+      <button class="acc-btn">❄️ فرابية </button>
+      <div class="acc-content">
+        <ul class="menu-list">
+          <li>آيس لاتيه <span>35 ج.م</span></li>
+          <li>آيس كوفي <span>30 ج.م</span></li>
+          <li>وايت موكا <span>42 ج.م</span></li>
+          <li>آيس موكا <span>40 ج.م</span></li>
+		  <li> ايس امريكانو <span>40 ج.م</span></li>
+		  <li> ايس توفي نت <span>40 ج.م</span></li>
+		  <li> ايس دابل شيكن دولشي <span>40 ج.م</span></li>
         </ul>
       </div>
     </div>
@@ -203,6 +287,9 @@ footer{text-align:center;padding:14px;color:var(--muted);font-weight:700}
           <li>شوكليت <span>38 ج.م</span></li>
           <li>مانجو <span>40 ج.م</span></li>
           <li>بستاشيو <span>50 ج.م</span></li>
+		  <li>لوتس <span>50 ج.م</span></li>
+		  <li>كوكز <span>50 ج.م</span></li>
+		  <li>كاجو <span>50 ج.م</span></li>
         </ul>
       </div>
     </div>
@@ -215,9 +302,37 @@ footer{text-align:center;padding:14px;color:var(--muted);font-weight:700}
           <li>آيس كوفي <span>30 ج.م</span></li>
           <li>وايت موكا <span>42 ج.م</span></li>
           <li>آيس موكا <span>40 ج.م</span></li>
+		  <li> ايس امريكانو <span>40 ج.م</span></li>
+		  <li> ايس توفي نت <span>40 ج.م</span></li>
+		  <li> ايس دابل شيكن دولشي <span>40 ج.م</span></li>
         </ul>
       </div>
     </div>
+	
+	 <div class="acc-item">
+      <button class="acc-btn">☕ صودا</button>
+      <div class="acc-content">
+        <ul class="menu-list">
+          <li>إسبريسو لافازا <span>M&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;30</span></li>
+          <li>إسبريسو إيللي <span>M&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;30</span></li>
+          <li>إسبريسو تميم <span>M&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;30</span></li>
+        </ul>
+      </div>
+    </div>
+	
+	 <div class="acc-item">
+      <button class="acc-btn">☕ سموزي</button>
+      <div class="acc-content">
+        <ul class="menu-list">
+          <li>إسبريسو لافازا <span>M&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;30</span></li>
+          <li>إسبريسو إيللي <span>M&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;30</span></li>
+          <li>إسبريسو تميم <span>M&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;30</span></li>
+        </ul>
+      </div>
+    </div>
+	
+	
+	
 
   </div>
 </section>
@@ -298,5 +413,7 @@ document.querySelectorAll(".acc-btn").forEach(btn=>{
 });
 </script>
 
+<a href="https://wa.me/201093438380" class="whatsapp-float" target="_blank" aria-label="WhatsApp Chat"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="width:36px;height:36px;" alt="WhatsApp"></a>
+<a href="tel:+201093438380" class="call-float" aria-label="Call Now">📞</a>
 </body>
 </html>
